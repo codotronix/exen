@@ -1,7 +1,12 @@
-import { useState } from "react"
 
-const MCQ_SA = ({ qData }) => {
-    const [ans, setAns] = useState('-')  // { 1: true, 2: false } etc
+const MCQ_SA = ({ qData, userAnswers, setUserAnswers }) => {
+    
+    const setAns = opId => {
+        setUserAnswers(ua => ({
+            ...ua,
+            [qData.id]: opId
+        }))
+    }
 
     return (
         <div className="MCQ_SA">
@@ -13,7 +18,7 @@ const MCQ_SA = ({ qData }) => {
                         <label className="radio_label">
                             <input type="radio" 
                                 value={op.id}
-                                checked={ans === op.id}
+                                checked={userAnswers[qData.id] === op.id}
                                 onChange={() => setAns(op.id)}
                             />
                         
@@ -25,7 +30,7 @@ const MCQ_SA = ({ qData }) => {
                     <label className="radio_label">
                         <input type="radio" 
                             value="-"
-                            checked={ans === '-'}
+                            checked={!userAnswers[qData.id] || userAnswers[qData.id] === '-'}
                             onChange={() => setAns('-')}
                         />
                     

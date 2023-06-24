@@ -1,13 +1,19 @@
-import { useState } from "react"
 
-const MCQ_MA = ({ qData, showResult }) => {
-    const [ans, setAns] = useState({})  // { 1: true, 2: false } etc
-    // const [showResult, setShowResult]
+const MCQ_MA = ({ qData, userAnswers, setUserAnswers }) => {
 
     const handleChange = (e, opId) => {
-        setAns({
-            ...ans,
-            [opId]: e.target.checked
+        // { 1: true, 2: false } etc
+        setUserAnswers(ua => {
+            let thisAns = ua[qData.id] || {}
+            thisAns = {
+                ...thisAns,
+                [opId]: e.target.checked
+            }
+
+            return {
+                ...ua,
+                [qData.id]: thisAns
+            }
         })
     }
 
@@ -21,7 +27,7 @@ const MCQ_MA = ({ qData, showResult }) => {
                     <li key={op.id}>
                         <label className="radio_label">
                             <input type="checkbox" 
-                                checked={!!ans[op.id]}
+                                checked={userAnswers[qData.id] && !!userAnswers[qData.id][op.id]}
                                 onChange={e => handleChange(e, op.id)}
                             />
                         
