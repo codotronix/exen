@@ -1,15 +1,25 @@
-
-const MCQ_SA = ({ qData, userAnswers, setUserAnswers }) => {
+import EXAM_CONST from "../EXAM_CONST"
+const MCQ = ({ qData, userAnswers, setUserAnswers, setResult }) => {
     
     const setAns = opId => {
         setUserAnswers(ua => ({
             ...ua,
             [qData.id]: opId
         }))
+
+        // CHECK WHETHER IT IS CORRECT / INCORRECT / UNANSWERED
+        let status = EXAM_CONST.INCORRECT
+        if(opId === '-') status = EXAM_CONST.UNANSWERED
+        else if (opId === qData.k) status = EXAM_CONST.CORRECT
+
+        setResult(res => ({
+            ...res,
+            [qData.id]: { status }
+        }))
     }
 
     return (
-        <div className="MCQ_SA">
+        <div className="MCQ">
             <p className="exam_text">{qData.q}</p>
             <ul className="options">
                 {
@@ -42,4 +52,4 @@ const MCQ_SA = ({ qData, userAnswers, setUserAnswers }) => {
     )
 }
 
-export default MCQ_SA
+export default MCQ

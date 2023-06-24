@@ -1,10 +1,10 @@
 import styles from "./Panel.module.css"
 
 const Panel = props => {
-    let { children, justify="left" } = props // justify can be any of justify-content css values
+    let { children, justify="left" } = props
 
     return (
-        <div className={styles.root} style={{ justifyContent: justify }}>
+        <div className={styles.root} style={{ textAlign: justify }}>
             {children}
         </div>
     )

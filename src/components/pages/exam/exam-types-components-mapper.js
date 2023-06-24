@@ -1,10 +1,10 @@
 // import DND_LCOL_RCOL from "./exam-type-components/DND_LCOL_RCOL";
-import MCQ_MA from "./exam-type-components/MCQ_MA";
-import MCQ_SA from "./exam-type-components/MCQ_SA";
+import MSQ from "./exam-type-components/MSQ";
+import MCQ from "./exam-type-components/MCQ";
 
 const mapper = {
-    MCQ_MA,
-    MCQ_SA
+    MCQ,
+    MSQ
 }
 
 export default mapper
