@@ -14,7 +14,7 @@
     // Q.1
     {
       id: 1,
-      t: "MCQ_MA",
+      t: "MSQ",
 
       q: "You are planning to host practical training to acquaint staff with Docker for Windows. \n\
 Staff devices must support the installation of Docker. \n\
@@ -35,7 +35,7 @@ Which of the following are requirements for this installation?",
     // Q. 2
     {
       id: 2,
-      t: "MCQ_SA",
+      t: "MCQ",
       q: "Which is required for a Deep Learning Virtual Machine (DLVM) to support Compute Unified Device Architecture (CUDA) computations ?",
       os: [
         '1# SSD', '2# FPGA', '3# GPU', '4# Power BI'
@@ -46,7 +46,7 @@ Which of the following are requirements for this installation?",
     // Q. 3
     {
       id: 3,
-      t: "MCQ_SA",
+      t: "MCQ",
       q: "You need to implement a Data Science Virtual Machine (DSVM) that supports the Caffe2 deep learning framework.\n\
 Which of the following DSVM should you create?",
       os: [
@@ -61,7 +61,7 @@ Which of the following DSVM should you create?",
     // Q. 4
     {
       id: 4,
-      t: "MCQ_SA",
+      t: "MCQ",
       q: "This question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result. Establish if the recommendation satisfies the requirements.\n\
 You have been tasked with employing a machine learning model, which makes use of a PostgreSQL database and needs GPU processing, to forecast prices.\n\
 You are preparing to create a virtual machine that has the necessary tools built into it.\n\
@@ -79,7 +79,7 @@ Will the requirements be satisfied?",
     // Q. 5
     {
       id: 5,
-      t: "MCQ_SA",
+      t: "MCQ",
       q: "This question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result. Establish if the recommendation satisfies the requirements.\n\
 You have been tasked with employing a machine learning model, which makes use of a PostgreSQL database and needs GPU processing, to forecast prices.\n\
 You are preparing to create a virtual machine that has the necessary tools built into it.\n\
@@ -97,7 +97,7 @@ Will the requirements be satisfied?",
     // Q. 6
     {
       id: 6,
-      t: "MCQ_SA",
+      t: "MCQ",
       q: "This question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result. Establish if the recommendation satisfies the requirements.\n\
 You have been tasked with employing a machine learning model, which makes use of a PostgreSQL database and needs GPU processing, to forecast prices.\n\
 You are preparing to create a virtual machine that has the necessary tools built into it.\n\
@@ -115,7 +115,7 @@ Will the requirements be satisfied?",
     // Q. 7
     {
       id: 7,
-      t: "MCQ_MA",
+      t: "MSQ",
       q: "You have been tasked with moving data into Azure Blob Storage for the purpose of supporting Azure Machine Learning.\n\
 Which of the following can be used to complete your task?",
 
@@ -132,7 +132,7 @@ Which of the following can be used to complete your task?",
     // Q. 8 ////////////////////////////////////////////////
     {
       id: 8,
-      t: "MCQ_SA",
+      t: "MCQ",
       q: "To move a large dataset from Azure Machine Learning Studio to WEKA environment, the data must be converted to the __________ format (Fill in the blanks with the correct choice)",
 
       os: [
@@ -147,7 +147,7 @@ Which of the following can be used to complete your task?",
     // Q. 9 ////////////////////////////////////////////////
     {
       id: 9,
-      t: "MCQ_SA",
+      t: "MCQ",
       q: "You have been tasked with designing a deep learning model, which accommodates the most recent edition of Python, to recognize language.\n\
 You have to include a suitable deep learning framework in the Data Science Virtual Machine (DSVM).\n\
 Which of the following actions should you take?",
@@ -164,7 +164,7 @@ Which of the following actions should you take?",
     // Q. 10 ////////////////////////////////////////////////
     {
       id: 10,
-      t: "MCQ_SA",
+      t: "MCQ",
       q: "This question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result. Establish if the recommendation satisfies the requirements.\n\
 You have been tasked with evaluating your model on a partial data sample via k-fold cross-validation.\n\
 You have already configured a k parameter as the number of splits. You now have to configure the k parameter for the cross-validation with the usual value choice.\n\
@@ -181,7 +181,7 @@ Will the requirements be satisfied?",
     // Q. 11 ////////////////////////////////////////////////
     {
       id: 11,
-      t: "MCQ_SA",
+      t: "MCQ",
       q: "This question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result. Establish if the recommendation satisfies the requirements.\n\
 You have been tasked with evaluating your model on a partial data sample via k-fold cross-validation.\n\
 You have already configured a k parameter as the number of splits. You now have to configure the k parameter for the cross-validation with the usual value choice.\n\
@@ -198,7 +198,7 @@ Will the requirements be satisfied?",
     // Q. 12 ////////////////////////////////////////////////
     {
       id: 12,
-      t: "MCQ_SA",
+      t: "MCQ",
       q: "You construct a machine learning experiment via Azure Machine Learning Studio.\n\
 You would like to split data into two separate datasets.\n\
 Which of the following actions should you take?",
@@ -215,7 +215,7 @@ Which of the following actions should you take?",
     // Q. 13 ////////////////////////////////////////////////
     {
       id: 13,
-      t: "MCQ_SA",
+      t: "MCQ",
       q: "You have been tasked with creating a new Azure pipeline via the Machine Learning designer.\n\
 You have to makes sure that the pipeline trains a model using data in a comma-separated values (CSV) file that is published on a website. A dataset for the file for this file does not exist.\n\
 Data from the CSV file must be ingested into the designer pipeline with the least amount of administrative effort as possible.\n\
@@ -233,7 +233,7 @@ Which of the following actions should you take?",
     // Q. 14 ////////////////////////////////////////////////
     {
       id: 14,
-      t: "MCQ_SA",
+      t: "MCQ",
       q: "This question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result. Establish if the recommendation satisfies the requirements.\n\
 You are in the process of creating a machine learning model. Your dataset includes rows with null and missing values.\n\
 You plan to make use of the Clean Missing Data module in Azure Machine Learning Studio to detect and fix the null and missing values in the dataset.\n\
@@ -250,7 +250,7 @@ Will the requirements be satisfied?",
     // Q. 15 ////////////////////////////////////////////////
     {
       id: 15,
-      t: "MCQ_SA",
+      t: "MCQ",
       q: "This question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result. Establish if the recommendation satisfies the requirements.\n\
 You are in the process of creating a machine learning model. Your dataset includes rows with null and missing values.\n\
 You plan to make use of the Clean Missing Data module in Azure Machine Learning Studio to detect and fix the null and missing values in the dataset.\n\
@@ -267,7 +267,7 @@ Will the requirements be satisfied?",
     // Q. 16 ////////////////////////////////////////////////
     {
       id: 16,
-      t: "MCQ_SA",
+      t: "MCQ",
       q: "This question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result. Establish if the recommendation satisfies the requirements.\n\
 You are in the process of creating a machine learning model. Your dataset includes rows with null and missing values.\n\
 You plan to make use of the Clean Missing Data module in Azure Machine Learning Studio to detect and fix the null and missing values in the dataset.\n\
@@ -284,7 +284,7 @@ Will the requirements be satisfied?",
     // Q. 17 ////////////////////////////////////////////////
     {
       id: 17,
-      t: "MCQ_SA",
+      t: "MCQ",
       q: "You need to consider the underlined segment to establish whether it is accurate.\n\
 To transform a categorical feature into a binary indicator, you should make use of the Clean Missing Data module.\n\
 Select `No adjustment required` if the underlined segment is accurate. If the underlined segment is inaccurate, select the accurate option.",
@@ -301,7 +301,7 @@ Select `No adjustment required` if the underlined segment is accurate. If the un
     // Q. 18 ////////////////////////////////////////////////
     {
       id: 18,
-      t: "MCQ_SA",
+      t: "MCQ",
       q: "You need to consider the underlined segment to establish whether it is accurate.\n\
 To improve the amount of low incidence cases in a dataset, you should make use of the SMOTE module.\n\
 Select `No adjustment required` if the underlined segment is accurate. If the underlined segment is inaccurate, select the accurate option.",
@@ -318,7 +318,7 @@ Select `No adjustment required` if the underlined segment is accurate. If the un
     // Q. 19 ////////////////////////////////////////////////
     {
       id: 19,
-      t: "MCQ_SA",
+      t: "MCQ",
       q: "The __________ visualization can be used to predict outliers in yout data. (Fill in the blanks with the appropriate option)",
 
       os: [
@@ -333,7 +333,7 @@ Select `No adjustment required` if the underlined segment is accurate. If the un
     // Q. 20 ////////////////////////////////////////////////
     {
       id: 20,
-      t: "MCQ_SA",
+      t: "MCQ",
       q: "You are planning to host practical training to acquaint learners with data visualization creation using Python. Learner devices are able to connect to the internet.\n\
 Learner devices are currently NOT configured for Python development. Also, learners are unable to install software on their devices as they lack administrator permissions. Furthermore, they are unable to access Azure subscriptions.\n\
 It is imperative that learners are able to execute Python-based data visualization code.\n\
@@ -351,7 +351,7 @@ Which of the following actions should you take?",
     // Q. 21 ////////////////////////////////////////////////
     {
       id: 21,
-      t: "MCQ_SA",
+      t: "MCQ",
       q: '_________ is a data cleaning option of Clean Missing Data module that does not require predictors for each column (Fill in the blanks with the correct choice)',
 
       os: [
@@ -366,7 +366,7 @@ Which of the following actions should you take?",
     // ////////////////////////////////////////////////
     {
       id: 22,
-      t: "MCQ_SA",
+      t: "MCQ",
       q: 'You have recently concluded the construction of a binary classification machine learning model.\n\
 You are currently assessing the model. You want to make use of a visualization that allows for precision to be used as the measurement for the assessment.\n\
 Which of the following actions should you take?',
@@ -383,7 +383,7 @@ Which of the following actions should you take?',
     // ////////////////////////////////////////////////
     {
       id: 23,
-      t: "MCQ_SA",
+      t: "MCQ",
       q: 'This question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result. Establish if the recommendation satisfies the requirements.\n\
 You have been tasked with evaluating your model on a partial data sample via k-fold cross-validation.\n\
 You have already configured a k parameter as the number of splits. You now have to configure the k parameter for the cross-validation with the usual value choice.\n\
@@ -400,7 +400,7 @@ Will the requirements be satisfied?',
     // ////////////////////////////////////////////////
     {
       id: 24,
-      t: "MCQ_MA",
+      t: "MSQ",
       q: 'You would like to make it a Poisson regression model. To achieve your goal, the feature values need to meet certain conditions.\n\
 Which of the following are relevant conditions with regards to the label data?',
 
@@ -417,7 +417,7 @@ Which of the following are relevant conditions with regards to the label data?',
     // ////////////////////////////////////////////////
     {
       id: 25,
-      t: "MCQ_SA",
+      t: "MCQ",
       q: 'This question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result. Establish if the recommendation satisfies the requirements.\n\
 You are in the process of carrying out feature engineering on a dataset.\n\
 You want to add a feature to the dataset and fill the column value.\n\
