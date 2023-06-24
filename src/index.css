@@ -10,7 +10,8 @@
 }
 
 :root {
-  --primary-color-1: dodgerblue
+  --primary-color-1: dodgerblue;
+  --secondary-color-1: orange;
 }
 
 body {
