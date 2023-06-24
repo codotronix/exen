@@ -1,0 +1,18 @@
+.exam_text {
+    white-space: pre-wrap;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.exam_acc {
+    margin-top: 25px;
+    user-select: none;
+}
+
+.exam_acc .acc_body {
+    padding: 10px 15px 30px;
+}
+
+/* .exam_acc .acc_body .radio_label {
+    display: block;
+} */
