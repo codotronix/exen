@@ -1,8 +1,15 @@
 import EXAM_CONST from "../EXAM_CONST"
+import clsx from 'clsx'
 
-const MSQ = ({ qData, userAnswers, setUserAnswers, setResult }) => {
+const MSQ = props => {
+    const { qData, userAnswers, setUserAnswers, setResult, resultVisible } = props
 
     const handleChange = (e, opId) => {
+        if(resultVisible) {
+            e.preventDefault()
+            console.log('Change after submission not allowed...')
+            return
+        }
         // { 1: true, 2: false } etc
         let thisAns = userAnswers[qData.id] || {}
         thisAns = {
@@ -50,11 +57,13 @@ const MSQ = ({ qData, userAnswers, setUserAnswers, setResult }) => {
 
     return (
         <div className="MSQ">
-            <p className="exam_text">{qData.q}</p>
+            <p className="exam_text">
+                {qData.q}
+            </p>
             <ul className="options">
                 {
                     qData.os && qData.os.map(op => 
-                    <li key={op.id}>
+                    <li key={op.id} className={clsx(resultVisible && qData.k.includes(op.id) && 'correct_op', 'p-5' )}>
                         <label className="radio_label">
                             <input type="checkbox" 
                                 checked={userAnswers[qData.id] && !!userAnswers[qData.id][op.id]}

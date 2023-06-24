@@ -16,3 +16,7 @@
 /* .exam_acc .acc_body .radio_label {
     display: block;
 } */
+
+.correct_op {
+    background: var(--light-green);
+}

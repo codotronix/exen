@@ -1,9 +1,9 @@
 import Accordion from "./accordion/Accordion";
 import Logo from "./logo/Logo";
 import Panel from "./panel/Panel";
-
+import Chip from "./chip/Chip";
 
 export * from "./form"
 export {
-    Accordion, Logo, Panel
+    Accordion, Logo, Panel, Chip
 }

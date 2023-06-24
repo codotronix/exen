@@ -12,6 +12,7 @@
 :root {
   --primary-color-1: dodgerblue;
   --secondary-color-1: orange;
+  --light-green: #00dc00;
 }
 
 body {
@@ -37,6 +38,7 @@ li {
 
 .mt-15 { margin-top: 15px !important; }
 .mt-25 { margin-top: 25px !important; }
+.p-5 { padding: 5px !important }
 
 /* input[type="checkbox"],
 input[type="radio"] {

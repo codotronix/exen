@@ -1,7 +1,7 @@
 import { useState } from "react"
 import "./Exam.css"
 import EXAM_TYPE_COMP_MAP from "./exam-types-components-mapper"
-import { Accordion, Button, Panel } from "../../common"
+import { Accordion, Button, Panel, Chip } from "../../common"
 import { useExamData } from "./custom-hooks/useExamData"
 import EXAM_CONST from "./EXAM_CONST"
 
@@ -56,18 +56,54 @@ const Exam = props => {
             
             <Panel>
                 <h1>Name: {examData.name}</h1>
-                <div className="mt-15">Questions: {examData.questions && examData.questions.length}</div>
+                <div className="mt-15">
+                    Questions: {examData.questions && examData.questions.length}
+                </div>
+                <div className="mt-15">
+                    Time: {examData.questions && Math.ceil(examData.questions.length * 1.5) + ' Minutes' }
+                </div>
             </Panel>
+
+            { 
+                resultVisible &&
+                <Panel>
+                    <h1>Result Statistics</h1>
+                    <div className="mt-15">
+                        Correct: {stats.correct}
+                    </div>
+                    <div className="mt-15">
+                        Partially Correct: {stats.partialCorrect}
+                    </div>
+                    <div className="mt-15">
+                        Incorrect: {stats.incorrect}
+                    </div>
+                    <div className="mt-15">
+                        Not Answered: {stats.unanswered}
+                    </div>
+                </Panel>
+            }
             {
                 examData.questions && examData.questions.map( (q, i) => {
                     const C = EXAM_TYPE_COMP_MAP[q.t]
                     return (
-                        <Accordion title={`Q. No. ${i+1}`} key={i} classes="exam_acc">
+                        <Accordion title={
+                            <>
+                                <span>{`Q. No. ${i+1}`}</span>
+                                {
+                                    resultVisible && 
+                                    <Chip styles={{ float: 'right', marginRight: '35px' }}> 
+                                    { (result[q.id] ? result[q.id].status : EXAM_CONST.UNANSWERED).toLowerCase() }
+                                    </Chip> 
+                                }
+                            </>
+                            } 
+                            key={i} 
+                            classes="exam_acc"
+                        >
                             <C 
                                 qData={q} 
                                 userAnswers={userAnswers}
                                 setUserAnswers={setUserAnswers}
-                                result={result}
                                 setResult={setResult}
                                 resultVisible={resultVisible}
                             />
