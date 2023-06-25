@@ -1,11 +1,14 @@
 import EXAM_CONST from "../EXAM_CONST"
 import clsx from 'clsx'
+import { useNotification } from "../../../common/notifications/useNotification"
 const MCQ = props => {
     const { qData, userAnswers, setUserAnswers, setResult, resultVisible } = props
+    const notify = useNotification()
+
     const handleChange = (e, opId) => {
         if(resultVisible) {
             e.preventDefault()
-            console.log('Change after submission not allowed...')
+            notify('Change after submission not allowed...')
             return
         }
 
