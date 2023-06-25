@@ -17,6 +17,10 @@
     display: block;
 } */
 
+.options li:active {
+    background: rgba(255, 255, 0, .5);
+}
+
 .correct_op {
     background: var(--light-green);
 }

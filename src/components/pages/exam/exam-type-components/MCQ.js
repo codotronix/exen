@@ -48,7 +48,7 @@ const MCQ = props => {
                         </label>
                     </li>)
                 }
-                <li>
+                <li className="p-5">
                     <label className="radio_label">
                         <input type="radio" 
                             value="-"

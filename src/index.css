@@ -7,13 +7,14 @@
   font-size: inherit;
   margin: 0;
   padding: 0;
+  user-select: none;
 }
 
 :root {
   --primary-color-1: dodgerblue;
   --secondary-color-1: orange;
   --light-green: #00dc00;
-  --notif-color: blueviolet;
+  --notif-color: orangered;
 }
 
 body {
@@ -49,8 +50,9 @@ input[type="radio"] {
 .radio_label {
   padding-left: 20px;
   position: relative;
-  display: inline-block;
+  display: block;
 }
+
 .radio_label input[type="checkbox"],
 .radio_label input[type="radio"] {
   position: absolute;

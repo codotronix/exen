@@ -3,4 +3,12 @@
 .root {
     font-weight: bold;
     font-family: 'Audiowide', cursive;
+    display: flex;
+    align-items: center;
+}
+.colr1 {
+    color: var(--primary-color-1);
+}
+.colr2 {
+    color: var(--secondary-color-1)
 }
