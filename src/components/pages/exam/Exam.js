@@ -6,7 +6,7 @@ import { useExamData } from "./custom-hooks/useExamData"
 import EXAM_CONST from "./EXAM_CONST"
 
 const Exam = props => {
-    const examDataURL = 'examdata/dp100_1.json5'
+    const examDataURL = process.env.PUBLIC_URL + '/examdata/dp100_1.json5'
     const examData = useExamData(examDataURL)
 
     // A state to track the user answers

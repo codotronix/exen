@@ -3,11 +3,24 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import { routes } from './routes';
+import { MainContextProvider } from './contexts/MainContext';
+
+const router = createBrowserRouter(routes, {
+  basename: "/exen",
+})
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    <MainContextProvider>
+      <RouterProvider router={router} />
+    </MainContextProvider>
   </React.StrictMode>
 );
 
