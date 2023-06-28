@@ -1,18 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import { routes } from './routes';
+import routes from './routes';
 import { MainContextProvider } from './contexts/MainContext';
+import { MainLayout } from './components/layouts';
 
-const router = createBrowserRouter(routes, {
+// wrapped each page component inside the common layout
+const wrappedRoutes = routes.map(r => ({
+  ...r,
+  element: <MainLayout><r.component /></MainLayout>
+}))
+
+// create the router
+const router = createBrowserRouter(wrappedRoutes, {
   basename: "/exen",
 })
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

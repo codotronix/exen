@@ -1,13 +1,15 @@
 import { Home, Exam, Certify } from './components/pages'
 
-export const routes = [
+const routes = [
     {
-        path: "/", element: <Home />
+        path: "/", component: Home, displayName: "Home"
     },
     {
-        path: "/exam/:examId", element: <Exam />
+        path: "/exam/:examId", component: Exam, displayName: "Exam"
     },
     {
-        path: "/certify/:certId", element: <Certify />
+        path: "/certify/:certId", component: Certify, displayName: "Certify"
     }
 ]
+
+export default routes
