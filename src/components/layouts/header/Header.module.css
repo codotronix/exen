@@ -3,8 +3,14 @@
     align-items: center;
     justify-content: space-between;
     padding: 5px 15px;
+    position: relative;
 }
-
+.toggleMenu {
+    display: none;
+    position: absolute;
+    left: 15px;
+    top: 12px;
+}
 .navs {
     display: flex;
 }
@@ -30,4 +36,32 @@
 }
 .navs li a:hover::after {
     transform: scaleX(1);
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        justify-content: center;
+        padding-left: 70px;
+    }
+    .navs {
+        position: absolute;
+        left: 15px;
+        top: 60px;
+        flex-direction: column;
+        background: var(--primary-color-1);
+        padding: 5px 0;
+        border-radius: 4px;
+        transition: all 300ms linear;
+    }
+    .navs.hide {
+        transform: translateX(-270px);
+    }
+    .navs li a {
+        width: 200px;
+        color: #fff;
+        padding-left: 25px;
+    }
+    .toggleMenu {
+        display: inline-block;
+    }
 }

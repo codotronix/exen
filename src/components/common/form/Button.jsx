@@ -1,9 +1,10 @@
 import styles from './form.module.css'
+import clsx from 'clsx'
 
 const Button = props => {
-    const { type='button', children='Click Me', ...rest } = props
+    const { type='button', children='Click Me', className='', ...rest } = props
     return (
-        <button type={type} className={styles.button} {...rest}>
+        <button type={type} className={clsx(styles.button, className)} {...rest}>
             {children}
         </button>
     )

@@ -22,3 +22,15 @@
     box-shadow: inset 0px 0px 5px 0px #000;
     transform: scale(1) translateY(2px);
 }
+.iconBtn {
+    height: 40px;
+    width: 40px;
+    border: 1px solid var(--primary-color-1);
+    color: var(--primary-color-1);
+    border-radius: 4px;
+    background: transparent;
+    font-size: 20px;
+}
+.iconBtn:active {
+    background: rgba(126, 126, 126, .3);
+}
