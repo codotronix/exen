@@ -5,7 +5,7 @@ const routes = [
         path: "/", component: Home, displayName: "Home"
     },
     {
-        path: "/exam/:examId", component: Exam, displayName: "Exam"
+        path: "/exam/:examId", component: Exam
     },
     {
         path: "/certify/:certId", component: Certify, displayName: "Certify"

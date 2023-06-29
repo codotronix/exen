@@ -21,8 +21,6 @@ const router = createBrowserRouter(wrappedRoutes, {
   basename: "/exen",
 })
 
-
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
