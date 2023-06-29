@@ -13,7 +13,8 @@ import { MainLayout } from './components/layouts';
 // wrapped each page component inside the common layout
 const wrappedRoutes = routes.map(r => ({
   ...r,
-  element: <MainLayout><r.component /></MainLayout>
+  // element: <MainLayout><r.component /></MainLayout>
+  element: <><r.component /></>
 }))
 
 // create the router

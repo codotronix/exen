@@ -11,7 +11,6 @@ const Header = () => {
         <header>
             <div className={styles.header}>
                 <Logo />
-
                 <div>
                     <IconButton className={styles.toggleMenu} onClick={() => setMobileNavVisible(!isMobileNavVisible) }>
                         <i className="fa-solid fa-bars"></i>

@@ -9,7 +9,7 @@ const MainLayout = props => {
     return (
         <MainContextProvider>
             
-            <Header />
+            {/* <Header /> */}
             <div className={styles.mainLayout}>
                 {children}
             </div>

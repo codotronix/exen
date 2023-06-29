@@ -431,11 +431,94 @@ Will the requirements be satisfied?',
       k: 2
     },
 
+    // ////////////////////////////////////////////////
+    {
+      id: 26,
+      t: "MCQ",
+      q: 'This question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result. Establish if the recommendation satisfies the requirements.\n\
+You are in the process of carrying out feature engineering on a dataset.\n\
+You want to add a feature to the dataset and fill the column value.\n\
+Recommendation: You must make use of the Join Data Azure Machine Learning Studio module.\n\
+Will the requirements be satisfied?',
+
+      os: [
+        '1# Yes.', 
+        '2# No.',
+      ],
+      k: 2
+    },
+
+    // ////////////////////////////////////////////////
+    {
+      id: 27,
+      t: "MCQ",
+      q: 'This question is included in a number of questions that depicts the identical set-up. However, every question has a distinctive result. Establish if the recommendation satisfies the requirements.\n\
+You are in the process of carrying out feature engineering on a dataset.\n\
+You want to add a feature to the dataset and fill the column value.\n\
+Recommendation: You must make use of the Edit Metadata Azure Machine Learning Studio module.\n\
+Will the requirements be satisfied?',
+
+      os: [
+        '1# Yes.', 
+        '2# No.',
+      ],
+      k: 2
+    },
 
 
+  // ////////////////////////////////////////////////
+    {
+      id: 28,
+      t: "MSQ",
+      q: 'You have been tasked with ascertaining if two sets of data differ considerably. You will make use of Azure Machine Learning Studio to complete your task.\n\
+You plan to perform a paired t-test.\n\
+Which of the following are conditions that must apply to use a paired t-test? (Choose all that apply.)',
 
+      os: [
+        '1# All scores are independent from each other.', 
+        '2# You have a matched pairs of scores.',
+        '3# The sampling distribution of d is normal.',
+        '4# The sampling distribution of x1- x2 is normal.',
+      ],
+      k: [2,3]
+    },
 
+// ////////////////////////////////////////////////
+    {
+      id: 29,
+      t: "MCQ",
+      q: 'You want to train a classification model using data located in a comma-separated values (CSV) file.\n\
+The classification model will be trained via the Automated Machine Learning interface using the Classification task type.\n\
+You have been informed that only linear models need to be assessed by the Automated Machine Learning.\n\
+Which of the following actions should you take?',
 
+      os: [
+        '1# You should disable deep learning.', 
+        '2# You should enable automatic featurization.',
+        '3# You should disable automatic featurization.',
+        '4# You should set the task type to Forecasting.',
+      ],
+      k: 2
+    },
+
+// ////////////////////////////////////////////////
+    {
+      id: 30,
+      t: "MCQ",
+      q: 'You are preparing to train a regression model via automated machine learning. The data available to you has features with missing values, as well as categorical features with little discrete values.\n\
+You want to make sure that automated machine learning is configured as follows:\n\
+✑ missing values must be automatically imputed.\n\
+✑ categorical features must be encoded as part of the training task.\n\
+Which of the following actions should you take?',
+
+      os: [
+        '1# You should make use of the featurization parameter with the "auto" value pair.', 
+        '2# You should make use of the featurization parameter with the "off" value pair.',
+        '3# You should make use of the featurization parameter with the "on" value pair.',
+        '4# You should make use of the featurization parameter with the "FeaturizationConfig" value pair.',
+      ],
+      k: 2
+    },
 
 
 
